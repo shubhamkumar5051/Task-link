@@ -13,9 +13,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand text-primary fw-bolder" href="#">SKM Tasky</a>
+            <a class="navbar-brand text-info fw-bolder" href="#">SKM Tasky</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Home</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -37,16 +37,42 @@
     </nav>
 
     <div class="container">
+
+        <!-- input search bar -->
         <div class="row mt-4">
-            <div class="col"></div>
+            <div class="col">
+
+            </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Here"
-                        aria-label="Search Here" aria-describedby="basic-addon2">
+                <div class="input-group mb-3 bg-body rounded shadow">
+                    <input type="text" class="form-control" placeholder="Search Here" aria-label="Search Here"
+                        aria-describedby="basic-addon2">
                     <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                 </div>
             </div>
-            <div class="col"></div>
+            <div class="col">
+
+            </div>
+        </div>
+
+        <!-- card container -->
+        <div class="row mt-4">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-end gap-2">
+                        <button type="button" class="btn btn-success"><i class="fas fa-pencil-alt"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1628417632477-5919c98218d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                            class="card-img-top" alt="...">
+                        <h5 class="card-title mt-3 text-primary fw-bold">Title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Save</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
