@@ -14,22 +14,52 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog ">
+        <div class="modal-content bgUserColors border-light">
+            <div class="modal-header bg-dark">
+                <h5 class="modal-title text-info fw-bolder " id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                ...
+            <div class="modal-body ">
+                <!-- form input 1 -->
+                <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Image Url</label>
+                    <input type="url" class="form-control" id="imageurl" aria-describedby="Image Url"
+                        placeholder="https://example.com/abcd.png">
+
+                </div>
+                <!-- form input 2 -->
+                <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Task Title</label>
+                    <input type="text" class="form-control" id="tasktitle" aria-describedby="Task Title"
+                        placeholder="Enter Task Title">
+
+                </div>
+                <!-- form input 3 -->
+                <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Task Type</label>
+                    <input type="text" class="form-control" id="tasktype" aria-describedby="Task Type"
+                        placeholder="Enter Task Type">
+
+                </div>
+                <!-- form input 4 -->
+                <div class="mb-2">
+                    <label for="exampleInputEmail1" class="form-label">Task Description</label>
+                    <textarea rows="5" type="text" class="form-control" id="taskdescription"
+                        aria-describedby="Task Description" placeholder="Enter Description">
+                    </textarea>
+                </div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-info fw-bold">Save changes</button>
             </div>
         </div>
     </div>
 </div>
+
+<!-- navabar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <div class="container-fluid">
@@ -46,7 +76,6 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     class="btn btn-outline-info"><i class="fas fa-plus-circle me-2"></i>Add
                     New</button>
@@ -56,7 +85,6 @@
 </nav>
 
 <div class="container">
-
     <!-- input search bar -->
     <div class="row mt-4">
         <div class="col">
@@ -90,9 +118,26 @@
                     <a href="#" class="btn btn-info fw-bold">Save</a>
                 </div>
             </div>
-
+        </div>
+        <!-- 2nd card -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-end gap-2">
+                    <button type="button" class="btn btn-success"><i class="fas fa-pencil-alt"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1623360521088-5fd0b41d91e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        class="card-img-top" alt="...">
+                    <h5 class="card-title mt-3 text-black fw-bold">Title</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-info fw-bold">Save</a>
+                </div>
+            </div>
         </div>
     </div>
+
+
 </div>
 
 </body>
@@ -100,5 +145,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
 </script>
+<script src="app.js"></script>
 
 </html>
