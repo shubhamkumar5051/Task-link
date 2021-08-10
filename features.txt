@@ -1,0 +1,10 @@
+/*
+issues:- 1. save changes button should close the modal after it get clicked
+
+         2. after refresh the data get losed
+
+features :- 1. delete 
+            2. edit
+            3. open the card 
+            4. search
+*/

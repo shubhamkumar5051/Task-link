@@ -1,5 +1,5 @@
 const taskContainer = document.querySelector(".task__container");
-
+const globalStore = [];
 //Arrow function which will get trigerred by save changes button inside modal
 const saveChanges = () => {
   const taskData = {
@@ -29,4 +29,12 @@ const saveChanges = () => {
         </div>`;
 
   taskContainer.insertAdjacentHTML("beforeend", newCard);
+
+  //   creating local database
+
+  globalStore.push(taskData); //pushing object into an globalStore Array
+
+  localStorage.setItem("maal", JSON.stringify({ cards: globalStore })); // maal is unique id for local storage
+
+  //converting (object of object) into (Array of object) with help of stringify
 };
