@@ -6,6 +6,14 @@ body {
     background-color: #d4def0;
 }
 
+.userStyle {
+    border: black;
+}
+
+.userStyle:hover {
+    color: white;
+}
+
 /* .heffect:hover {
     font-weight: bolder;
 } */
