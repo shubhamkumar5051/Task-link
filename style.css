@@ -1,5 +1,6 @@
 body {
-    background-color: #d4def0;
+    /* background-color: #d4def0; */
+    background: linear-gradient(to right, #4286f4, #373b44);
 }
 
 .bgUserColors {
