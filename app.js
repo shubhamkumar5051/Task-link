@@ -4,7 +4,7 @@ let globalStore = [];
 //generate new card
 
 const generateNewCard = (taskData) =>
-  `<div class="col-sm-12 col-md-6 col-lg-4" >
+  `<div class="col-sm-12 col-md-6 col-lg-4 ${taskData.id}" >
  <div class="card">
      <div class="card-header d-flex justify-content-end gap-2">
          <button type="button" class="btn btn-success"><i class="fas fa-pencil-alt"></i></button>
@@ -26,14 +26,17 @@ const deleteCard = (event) => {
   event = window.event;
   //fetching the id of event
   const targetID = event.target.id;
-  const tagName = event.target.tagName;
+  const tagname = event.target.tagName;
 
-  globalStore = globalStore.filter((cardObject) => {
-    cardObject.id !== targetID;
-    localStorage.setItem("maal", JSON.stringify({ cards: globalStore }));
-  });
+  globalStore = globalStore.filter((cardObject) => cardObject.id !== targetID);
+  localStorage.setItem(
+    "maal",
+    JSON.stringify({
+      cards: globalStore,
+    })
+  );
 
-  if (tagName === "BUTTON") {
+  if (tagname === "BUTTON") {
     return taskContainer.removeChild(
       event.target.parentNode.parentNode.parentNode
     );
